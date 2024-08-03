@@ -4,6 +4,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
 import * as web3 from "@solana/web3.js";
 import Image from "next/image";
+import { CreateTokenAccountForm } from "../component/createTokenAccount"
 
 const Home = () => {
   const wallet = useWallet();
@@ -18,7 +19,7 @@ const Home = () => {
           <div>
             
             <div className="grid place-content-end pt-6 pr-6">
-              <button className="bg-gradient-to-r from-[#35d6ab] to-[#cd32fc] rounded-md  sm:px-[3px] sm:py-[3px]">
+              <button className="!bg-gradient-to-r from-[#35d6ab] to-[#cd32fc] rounded-md sm:px-[3px] sm:py-[3px]">
               <WalletMultiButton />
               </button>
             </div>
@@ -27,8 +28,16 @@ const Home = () => {
           </div>
         ) : (
           <div>
-            Hello
+            <div className="grid place-content-end pt-6 pr-6">
+              <button className="!bg-gradient-to-r from-[#35d6ab] to-[#cd32fc] rounded-md sm:px-[3px] sm:py-[3px]">
+              <WalletMultiButton />
+              </button>
+            </div>
+
+            <h1 className="text-center pt-[50px] font-bold md:text-2xl">Create a token</h1>
+            <CreateTokenAccountForm />
           </div>
+          
         )}
         </div>
       </div>
