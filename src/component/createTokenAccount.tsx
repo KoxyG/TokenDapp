@@ -4,7 +4,7 @@ import useCreateTokenAccount from "@/hooks/UsecreateToken";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import * as web3 from "@solana/web3.js";
 import { TOKEN_PROGRAM_ID, MINT_SIZE, getMinimumBalanceForRentExemptMint, createInitializeMintInstruction } from "@solana/spl-token";
-
+import { MintToForm } from "./mintToken";
 
 export const CreateTokenAccountForm: FC = () => {
   const { connection } = useConnection();
@@ -61,6 +61,7 @@ export const CreateTokenAccountForm: FC = () => {
    try {
     const owner = (event.currentTarget.elements.namedItem("owner") as HTMLInputElement).value;
     const mint = await createMint(event)
+    console.log("Token-Mint", mint)
     console.log("Mint public key", mint)
     createTokenAccount(owner, mint);
 
@@ -97,6 +98,9 @@ export const CreateTokenAccountForm: FC = () => {
           <p>Token Account Address: {tokenAccount}</p>
           <p>View your transaction on </p>
           <a href={link()}>Solana Explorer</a>
+
+          <br />
+          <MintToForm />
         </div>
       ) : null}
     </div>
