@@ -5,6 +5,7 @@ import { useWallet, useConnection } from "@solana/wallet-adapter-react";
 import * as web3 from "@solana/web3.js";
 import Image from "next/image";
 import { CreateTokenAccountForm } from "../component/createTokenAccount"
+import Link from "next/link";
 
 const Home = () => {
   const wallet = useWallet();
@@ -33,9 +34,19 @@ const Home = () => {
               <WalletMultiButton />
               </button>
             </div>
+            <div className="grid space-y-4 px-[200px] py-[100px]">
+            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/createTokens">Create Token</Link>
 
-            <h1 className="text-center pt-[50px] font-bold md:text-2xl">Create a token</h1>
-            <CreateTokenAccountForm />
+            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/mintTokens">Mint Token</Link>
+            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferToken">Transfer Token</Link>
+            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferToken">Delegate Token</Link>
+            </div>
+
+            
+
+            {/* <h1 className="text-center pt-[50px] font-bold md:text-2xl">Create a token</h1>
+            <CreateTokenAccountForm /> */}
+          
           </div>
           
         )}
