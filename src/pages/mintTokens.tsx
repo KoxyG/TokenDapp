@@ -115,7 +115,7 @@ export default function MintToken() {
 
   return (
     <div className="max-w-4xl mx-auto mt-20">
-      <h1 className="text-2xl font-bold mb-4">Mint Token</h1>
+      <h1 className="text-2xl text-center font-bold mb-4">Mint Token</h1>
       <input
         type="text"
         placeholder="Enter token mint address"
@@ -129,7 +129,7 @@ export default function MintToken() {
         className={`w-full font-bold py-2 px-4 rounded ${
           isLoading
             ? "bg-gray-400 cursor-not-allowed"
-            : "bg-blue-500 hover:bg-blue-700 text-white"
+            : "bg-[#7727e8] hover:bg-[#964efa] text-white"
         }`}
       >
         {isLoading ? (
@@ -186,7 +186,7 @@ export default function MintToken() {
             className={`w-full font-bold py-2 px-4 rounded ${
               isLoading
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-green-500 hover:bg-green-700 text-white"
+                : "bg-[#7727e8] hover:bg-[#964efa] text-white"
             }`}
           >
             {isLoading ? (
