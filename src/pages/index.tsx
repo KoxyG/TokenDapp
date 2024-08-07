@@ -35,12 +35,32 @@ const Home = () => {
               </button>
             </div>
             <div className="grid space-y-4 px-[200px] py-[100px]">
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/createTokens">Create Token</Link>
+            <Link className="text-bold   sm:text-[20px]" href="/createTokens"> 
+            <button className="px-3 py-4 bg-[#7727e8] rounded-md">
+              Create Token
+            </button>
+            </Link>
 
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/mintTokens">Mint Token</Link>
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferTokens">Transfer Token</Link>
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/burn">Burn Token</Link>
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/delegate">Delegate Token</Link>
+            <Link className="text-bold sm:text-[20px]" href="/mintTokens">
+            <button className="px-3 py-4 bg-[#7727e8] rounded-md">
+            Mint Token
+            </button>
+             </Link>
+            <Link className="text-bold sm:text-[20px]" href="/transferTokens">
+            <button className="px-3 py-4 bg-[#7727e8] rounded-md">
+            Transfer Token
+            </button>
+            </Link>
+            <Link className="text-bold sm:text-[20px]" href="/burn">
+            <button className="px-3 py-4 bg-[#7727e8] rounded-md">
+            Burn Token
+            </button>
+            </Link>
+            <Link className="text-bold sm:text-[20px]" href="/delegate">
+            <button className="px-3 py-4 bg-[#7727e8] rounded-md">
+            Delegate Token
+            </button>
+            </Link>
             </div>
 
             

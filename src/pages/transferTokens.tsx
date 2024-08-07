@@ -78,7 +78,7 @@ export default function TransferToken() {
   };
 
   return (
-    <div className="center flex-col mx-auto mt-20">
+    <div className="grid justify-center flex-col mx-auto mt-20">
       <h1 className="text-2xl max-w-md font-bold mb-4">Transfer Token</h1>
       <div className="space-y-4 max-w-md">
         <input
@@ -106,7 +106,7 @@ export default function TransferToken() {
           onClick={handleTransferToken}
           disabled={isLoading || !publicKey}
           className={`w-full font-bold py-2 px-4 rounded ${
-            isLoading || !publicKey ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-700 text-white'
+            isLoading || !publicKey ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#7727e8] hover:bg-[#964efa] text-white'
           }`}
         >
           {isLoading ? 'Transferring...' : 'Transfer Tokens'}

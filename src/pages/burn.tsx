@@ -92,7 +92,7 @@ export default function BurnToken() {
           className={`w-full font-bold py-2 px-4 rounded ${
             isLoading || !publicKey
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-red-500 hover:bg-red-700 text-white"
+              : "bg-[#7727e8] hover:bg-[#964efa] text-white"
           }`}
         >
           {isLoading ? (
