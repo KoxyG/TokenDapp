@@ -38,7 +38,7 @@ const Home = () => {
             <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/createTokens">Create Token</Link>
 
             <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/mintTokens">Mint Token</Link>
-            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferToken">Transfer Token</Link>
+            <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferTokens">Transfer Token</Link>
             <Link className="text-bold  text-[#7727e8] sm:text-[20px]" href="/transferToken">Delegate Token</Link>
             </div>
 
